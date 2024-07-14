@@ -1,3 +1,3 @@
-My DevFolio ( Dveeloper Portfolio)
+My DevFolio ( Developer Portfolio)
 
-somethinbg about me..
+something about me..
