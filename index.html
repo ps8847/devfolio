@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vCard - Personal Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Prince Sharma"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Prince Sharma">Prince Sharma</h1>
+
+            <p class="title">Full Stack Developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:ps789650@gmail.com" class="contact-link"
+                  >ps789650@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+12133522795" class="contact-link"
+                  >+91 88475-38102</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">June 25, 2000</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Amritsar, Punjab, INDIA</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://github.com/ps8847" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/mwlite/in/ps8847"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-leetcode"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I'm Prince Sharma, a dedicated Software Engineer from India, with
+              a strong background in web development and full-stack engineering.
+              I specialize in creating seamless and dynamic applications using
+              technologies like ReactJS, NodeJS, and Laravel.
+            </p>
+
+            <p>
+              My job is to develop robust and efficient solutions that are not
+              only functional but also user-friendly and visually appealing. I
+              have a knack for problem-solving and thrive in teaching and
+              collaborative environments. My aim is to deliver high-quality
+              products that meet your needs and exceed expectations. I've
+              developed projects for various sectors, showcasing my ability to
+              adapt and innovate.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web design</h4>
+
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a
+                    professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+
+                  <p class="service-item-text">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                  <p class="service-item-text">
+                    Professional development of applications for iOS and
+                    Android.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials
+        -->
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Sparsh Mehra"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Sparsh Mehra
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      I've known Prince since college, and our shared interest
+                      in the same tech stack has made our bond strong. He's
+                      really great at multitasking. He's dedicated to his work
+                      and always aims for excellent results. Prince also thinks
+                      creatively and is open to new solutions. Our talks about
+                      new technologies and work improvements are always
+                      interesting and enriching. He's good at solving problems
+                      and working well in a team. Wishing him good luck for the
+                      future.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-2.png"
+                      alt="Purnima Arora"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Purnima Arora
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      I have worked with Prince. He is a good team member and is really good at what he does. He has a solid coding skills and a good grasp of various technologies.
+Keep rocking, Prince
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time class="modal-date">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    Testimonial
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header class="resume-title-wrapper">
+            <h2 class="h2 article-title">Resume</h2>
+            <a class="icon-box-resume" href="https://drive.google.com/file/d/15GaxJjqonChjAObhGOH8EGyocnQ-3wjt/view?usp=drive_link" target="_blank">
+              <ion-icon name="arrow-down-circle-outline" title="Download Resume"></ion-icon>
+            </a>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  BTech in Computer Science
+                </h4>
+
+                <span>Aug 2019 — Aug 2023</span>
+
+                <p class="timeline-text">Amritsar Groups of Colleges</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Senior Secondary (+2) in Science
+                </h4>
+
+                <span>March 2019</span>
+
+                <p class="timeline-text">DAV Sen. Sec. School</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Matriculation</h4>
+
+                <span>March 2017</span>
+
+                <p class="timeline-text">Jagat Jyoti Sen. Sec. School</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Associate System Engineer ( NSPL )
+                </h4>
+
+                <span>Jan 2023 — Present</span>
+
+                <p class="timeline-text">
+                  Currently serving as an Associate Software Engineer at NSPL,
+                  contributing to the development and maintenance of web
+                  applications and systems. Engaging in collaborative
+                  problem-solving and innovation.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Associate System Engineer Intern ( NSPL )
+                </h4>
+
+                <span>Jan 2023 — May 2023</span>
+
+                <p class="timeline-text">
+                  Worked as an intern at NSPL, gaining practical experience in
+                  web development and software engineering. Collaborated with
+                  teams to deliver web solutions.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My Skills</h3>
+
+            <section class="about-text">
+              <p>
+                Pursuing a degree in the field of computer and information technology is widely regarded as one of the most challenging academic endeavors one can undertake.Due to my degree and my passion for computer science I've learned various
+                  technologies in the field of computer science.
+              </p>
+  
+            </section>
+
+            <ol class="skill-list">
+
+              <li class="skill-item">
+                <h4 class="h4 skill-item-title">
+                  Adaptability : 
+                </h4>
+  
+                <p class="skill-text">
+                  I can learn and adapt any langauge/technology in very less time.
+                </p>
+              </li>
+              <li class="skill-item">
+                <h4 class="h4 skill-item-title">
+                  Programming languages : 
+                </h4>
+  
+                <p class="skill-text">
+                  C/C++, Java, JavaScript , Python(basics)
+                </p>
+              </li>
+              <li class="skill-item">
+                <h4 class="h4 skill-item-title">
+                  Scripting Language : 
+                </h4>
+  
+                <p class="skill-text">
+                  JQuery, JavaScript, Nodejs, Express.js, Core php
+                </p>
+              </li>
+              <li class="skill-item">
+                <h4 class="h4 skill-item-title">
+                  Markup And Styling :
+                </h4>
+  
+                <p class="skill-text">
+                  Html, Css, Sass , Material.ui , TailwindCss
+                </p>
+              </li>
+              <li class="skill-item">
+                <h4 class="h4 skill-item-title">
+                  Framework :
+                </h4>
+  
+                <p class="skill-text">
+                  Bootstrap , Reactjs , React-Native , NextJs , Laravel , Gatsby , REST , SOAP
+                </p>
+              </li>
+              <li class="skill-item">
+                <h4 class="h4 skill-item-title">
+                  Database :
+                </h4>
+  
+                <p class="skill-text">
+                  MongoDb, Sql , Firebase
+                </p>
+              </li>
+              <li class="skill-item">
+                <h4 class="h4 skill-item-title">
+                  Tools :
+                </h4>
+  
+                <p class="skill-text">
+                  GitHub , VsCode , Postman, ChatGPT
+                </p>
+              </li>
+              <li class="skill-item">
+                <h4 class="h4 skill-item-title">
+                  Others :
+                </h4>
+  
+                <p class="skill-text">
+                  Problem Solving | Teaching | DSA
+                </p>
+              </li>
+            </ol>
+
+
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">HTML</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">CSS</h5>
+                  <data value="65">65%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 65%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">JavaScript</h5>
+                  <data value="70">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Bootstrap</h5>
+                  <data value="75">75%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">ReactJs</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Laravel</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">NodeJs</h5>
+                  <data value="60">60%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">MySQL</h5>
+                  <data value="60">60%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">ExpressJs</h5>
+                  <data value="70">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Java</h5>
+                  <data value="65">65%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 65%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+      
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Web</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Crud</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Majors</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>NPM Package</button>
+            </li>
+          </ul>
+      
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-select-value>
+                Select category
+              </div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Crud</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Web</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Majors</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>NPM Package</button>
+              </li>
+            </ul>
+          </div>
+      
+          <ul class="project-list">
+      
+            <!-- Existing Project -->
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="NPM Package"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://www.npmjs.com/package/react-calendar-value">
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/react-calendar-value.png"
+                    alt="React-Calendar-Value"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">React-Calendar-Value</h3>
+                <p class="project-category">NPM Package</p>
+              </a>
+            </li>
+      
+            <!-- Image Editor Project -->
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/Image-Editor">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://ps8847.github.io/Image-Editor/">
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/image-editor.png"
+                    alt="Image Editor"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Image Editor</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+      
+            <!-- Memory Game Project -->
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/Memory-game">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://ps8847.github.io/Memory-game/">
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/memory-game.png"
+                    alt="Memory Game"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Memory Game with 4x4 Grid</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+      
+            <!-- Youtube Content Downloader Project -->
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/Youtube_Video-Audio-Shorts_Downloader">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://youtube-video-audio-shorts-downloader.vercel.app/">
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/yt_downloader.png"
+                    alt="Youtube Content Downloader"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Youtube Content Downloader</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+      
+            <!-- Words and Character Counter Project -->
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/Words_and_Characters_Counter/tree/main">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://ps8847.github.io/Words_and_Characters_Counter/">
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/Char_andWord_Counter.png"
+                    alt="Words and Character Counter"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Words and Character Counter</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+      
+            <!-- Random Color Generator Project -->
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/Color_code_Generator">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://ps8847.github.io/Color_code_Generator/">
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/Randon_Color_Generator.png"
+                    alt="Random Color Generator"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Random Color Generator</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+      
+            <!-- File Downloader Project -->
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/File_Downloader">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://ps8847.github.io/File_Downloader/">
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/file_downloader.png"
+                    alt="File Downloader"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">File Downloader</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+      
+            <!-- Task Recorder Web Application Project -->
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/taskify">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://ps8847.github.io/taskify/">
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/taskify.png"
+                    alt="Task Recorder Web Application"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Task Recorder Web Application</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+      
+            <!-- Basic Counter Project -->
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/react-counter">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://react-counter-five-blue.vercel.app/">
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/react-counter.png"
+                    alt="Basic Counter"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Counter</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+      
+            <!-- Meals Api Caller Project -->
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/react-meal-api">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://react-meal-api.vercel.app/">
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/react-meal-api.png"
+                    alt="Meals Api Caller"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Meals Api Caller</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+      
+            <!-- Basic Calculator Project -->
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/react-calculator">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://react-calculator-inky.vercel.app/">
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/react-calculator.png"
+                    alt="Basic Calculator"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Basic Calculator</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/My-first-React-Website">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://ps8847.github.io/My-first-React-Website/">
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/First-React-Website.png"
+                    alt="My First Website with React"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">My First Website with React</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/React-Todo-app">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://ps8847.github.io/React-Todo-app/">
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/todo_react.png"
+                    alt="ToDo List Managmement Application with React"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">ToDo List Managmement Application with React</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/Firebase-Website">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://reactfirebaseweb-75319.web.app/">
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/firebase-website.png"
+                    alt="My First Website React+Firebase"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">My First Website React+Firebase</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Applications"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/Local-Files-Song-Finder-application-apk">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/Song_Finder.jpg"
+                    alt="Song Finder (Android apk)"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Song Finder (Android apk)</h3>
+                <p class="project-category">Applications</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Applications"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/reactNative-education-app-basic">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/react-native-education-basic.jpg"
+                    alt="Basic Course Selling Education App ( React-Native )"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Basic Course Selling Education App ( React-Native )</h3>
+                <p class="project-category">Applications</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Applications"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a  href="https://github.com/ps8847/todolist-frontend-reactnative">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/todo-react-native.jpg"
+                    alt="Basic Course Selling Education App ( React-Native )"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title"> Basic Todo App ( React-Native )</h3>
+                <p class="project-category">Applications</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/SimplechatApp-socketIO">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://simplechat-app-socket-io.vercel.app">
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/simpleChat.png"
+                    alt="Simple Chat Application"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title"> Simple Chat Application</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/MyImdb-clone">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://myimdb-clone-app-react.netlify.app/">
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/imdb-clone.png"
+                    alt="IMDB Clone"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">IMDB Clone</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a  href="https://github.com/ps8847/nextjs-fullstack-website">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a  href="https://nextjs-fullstack-website.vercel.app/">
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/nextjs-fullstack.png"
+                    alt="My First Nextjs Website"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">My First Nextjs Website</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/nextjs-canvas-frontend.git">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a  href="https://nextjs-canvas-frontend.vercel.app" >
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/nextjs-draw.png"
+                    alt="Drawing Canvas"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Drawing Canvas</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/react-e-commerce-basic-filtering">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://react-e-commerce-basic-filtering.vercel.app/" >
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/react-ecommerce-filter.png"
+                    alt="E-commerce Basic Filtering"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">E-commerce Basic Filtering</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/react-firebase-chat">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/firebase-chat.png"
+                    alt="Firebase Chat App"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Firebase Chat App</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a      href="https://github.com/ps8847/social-media">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a    href="https://social-media-murex-chi.vercel.app/" >
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/social-media-react.png"
+                    alt="Social Media App"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Social Media App</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Web"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a      href="https://github.com/ps8847/Mern_Blog_Application">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a      href="https://mern-blog-application-five.vercel.app/" >
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/blog_app.png"
+                    alt="Blog Application"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Blog Application</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Crud"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a      href="https://github.com/ps8847/Crud_application_with_Reactjs_and_Nodejs">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/CRUD_SERN.png"
+                    alt="CRUD Application"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">CRUD Application</h3>
+                <p class="project-category">Crud Application</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Crud"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a       href="https://github.com/ps8847/laravel_crud_application">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                  src="./assets/images/portfolio/laravel_crud.png"
+                    alt="Laravel Crud Application"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Laravel Crud Application</h3>
+                <p class="project-category">Crud Application</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Crud"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a   href="https://github.com/ps8847/laravel_ajax_crud">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                  src="./assets/images/portfolio/ajax_crud_laravel.png"
+                    alt="Laravel Ajax Application"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Laravel Ajax Application</h3>
+                <p class="project-category">Crud Application</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Crud"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a   href="https://github.com/ps8847/laravel_ajax_crud">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                  src="./assets/images/portfolio/ajax_crud_laravel.png"
+                    alt="Laravel Ajax Application"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Laravel Ajax Application</h3>
+                <p class="project-category">Crud Application</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Crud"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a  href="https://github.com/ps8847/StudentManagement_application_web_Nodejs_MYSQL_db">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                  src="./assets/images/portfolio/student.png"
+                    alt="Student Management System"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Student Management System</h3>
+                <p class="project-category">Crud Application</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Majors"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a       href="https://github.com/ps8847/Web-Project-Php">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                   
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/dairy.png"
+                    alt="Dairy Products Shopping Project"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Dairy Products Shopping Project</h3>
+                <p class="project-category">Major Project</p>
+              </a>
+            </li>
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Majors"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://github.com/ps8847/My-DevFolio">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a    href="https://ps8847.github.io/My-DevFolio/index.html" >
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                   
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/Devfolio.png"
+                    alt="MyDevfolio"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">MyDevfolio</h3>
+                <p class="project-category">Major Project</p>
+              </a>
+            </li>
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Majors"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a  href="https://github.com/ps8847/Foodistan-Fod-delievery-React-Node-Mysql-application-">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                   
+                  </div>
+                  <img
+                    src="./assets/images/portfolio/Foodistan.png"
+                    alt="Food Delievery Web Application"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Food Delievery Web Application</h3>
+                <p class="project-category">Major Project</p>
+              </a>
+            </li>
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Majors"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a   href="https://github.com/ps8847/mern-ecommerce-bas"
+                    class="SourceCode">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a        href="https://mern-ecommerce-bas.vercel.app/">
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                  src="./assets/images/portfolio/mern-ecommerce-2.png"
+                    alt="Ecommerce with MERN Stack"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Ecommerce with MERN Stack</h3>
+                <p class="project-category">Major Project</p>
+              </a>
+            </li>
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="Majors"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a   href="https://github.com/ps8847/hotel-mern"
+                    class="SourceCode">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://hotel-mern-tau.vercel.app/" >
+                      <ion-icon name="share-outline"></ion-icon>
+                    </a>
+                  </div>
+                  <img
+                  src="./assets/images/portfolio/hotel-mern-3.png"
+                    alt="Booking.com clone with MERN Stack"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Booking.com clone with MERN Stack</h3>
+                <p class="project-category">Major Project</p>
+              </a>
+            </li>
+
+
+          </ul>
+        </section>
+      </article>
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252.47590117941215!2d74.9005490067342!3d31.63666263479861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919639646b97851%3A0xc01e135ff7a03ff9!2sVerka%20Booth!5e0!3m2!1sen!2sin!4v1720948516509!5m2!1sen!2sin"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="https://formspree.io/f/mwkzvddw" method="POST" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
