@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 // element toggle function
 const elementToggleFunc = function (elem) {
   elem.classList.toggle("active");
-}
+};
 
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
@@ -30,16 +30,38 @@ const modalDate = document.querySelector(".modal-date");
 const testimonialsModalFunc = function () {
   modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
-}
+};
+
+let getDate = (name) => {
+
+  console.log("name is : " , name);
+  
+  switch (name.trim()) {
+    case "Sparsh Mehra":
+      return "20 August, 2023";
+    case "Purnima Arora":
+      return "30 August, 2023";
+    case "Muskan Singh":
+      return "09 April, 2025";
+    default:
+      break;
+  }
+};
 
 // add click event to all modal items
 for (let i = 0; i < testimonialsItem.length; i++) {
   testimonialsItem[i].addEventListener("click", function () {
     modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
     modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-    modalDate.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML == "Sparsh Mehra" ? "20 August, 2023" : "30 August, 2023"
+    modalTitle.innerHTML = this.querySelector(
+      "[data-testimonials-title]"
+    ).innerHTML;
+    modalText.innerHTML = this.querySelector(
+      "[data-testimonials-text]"
+    ).innerHTML;
+    modalDate.innerHTML = getDate(
+      this.querySelector("[data-testimonials-title]").innerHTML
+    );
 
     testimonialsModalFunc();
   });
@@ -76,13 +98,15 @@ const filterFunc = function (selectedValue) {
   for (let i = 0; i < filterItems.length; i++) {
     if (selectedValue === "all") {
       filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category.toLowerCase()) {
+    } else if (
+      selectedValue === filterItems[i].dataset.category.toLowerCase()
+    ) {
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
     }
   }
-}
+};
 
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
